@@ -42,7 +42,6 @@ python3 run.py
 ### 해당 인스타그램 게시물의 댓글에서 유저 목록 추출 (대댓글 제외)
 #### Graph API 사용
 먼저 https://developers.facebook.com/docs/instagram-api/getting-started 를 참고해서 auth 토큰과 포스트의 media id를 가져옵니다. <br>
-(auth 토큰이 가져오기 까다로우면 https://www.youtube.com/watch?v=dEDKOcPuXlU 와 같은 소스를 참고하세요)
 
 다음으로 https://developers.facebook.com/docs/instagram-api/reference/media/comments/ 을 참고해서 해당 포스트의 코멘트를 가져옵니다.
 한번에 가져올 수 있는 개수는 현재 50개 이하인 것 같고, 그 다음 목록은 paging.next를 사용해서 가져옵니다. <br>
